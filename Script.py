@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 **Scarlett Johansson**,\n\nI CAN PROVIDE MOVIES IN GROUPS AND PM\n𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 AS ADMIN 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍\n\nTAP THE BELOW SEARCH BUTTON TO GET MOVIES IN INLINE MODE"""
+MY NAME IS <b>Scarlett Johansson</b>,\n\nI CAN PROVIDE MOVIES IN GROUPS AND PM\nJUST ADD ME TO YOUR GROUP AS ADMIN😍\n\nTAP THE BELOW SEARCH BUTTON TO GET MOVIES IN INLINE MODE"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
@@ -60,7 +60,7 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of tessa
+These are my extra features
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
