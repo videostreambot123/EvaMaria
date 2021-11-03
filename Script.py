@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 ***Scarlett Johansson***,\n\nI CAN PROVIDE MOVIES IN GROUPS AND PM\n𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 AS ADMIN 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍\n\nTAP THE BELOW SEARCH BUTTON TO GET MOVIES IN INLINE MODE"""
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 **Scarlett Johansson**,\n\nI CAN PROVIDE MOVIES IN GROUPS AND PM\n𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 AS ADMIN 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍\n\nTAP THE BELOW SEARCH BUTTON TO GET MOVIES IN INLINE MODE"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
@@ -8,7 +8,7 @@ class script(object):
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """***Sorry Source code is hiden***"""
+    SOURCE_TXT = """**Source code is unavailable**😁"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and I will respond whenever a keyword is found the message
