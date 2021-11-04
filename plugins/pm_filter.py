@@ -589,16 +589,16 @@ async def auto_filter(client, message):
         imdb = await get_poster(search) if IMDB else None
         if imdb and imdb.get('poster'):
             try:
-                await message.reply_photo(photo=imdb.get('poster'), caption=f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
+                await message.reply_photo(photo=imdb.get('poster'), caption=f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')}</b>\n\n🗒Storyline <b>{imdb.get('plot')}</b> / 10", reply_markup=InlineKeyboardMarkup(btn))
             except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
                 pic = imdb.get('poster')
                 poster = pic.replace('.jpg', "._V1_UX360.jpg")
-                await message.reply_photo(photo=poster, caption=f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
+                await message.reply_photo(photo=poster, caption=f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')}</b>\n\n🗒Storyline <b>{imdb.get('plot')}</b> / 10", reply_markup=InlineKeyboardMarkup(btn))
             except Exception as e:
                 print(e)
-                await message.reply_text(f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
+                await message.reply_text(f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')}</b>\n\n🗒Storyline <b>{imdb.get('plot')}</b> / 10", reply_markup=InlineKeyboardMarkup(btn))
         elif imdb:
-            await message.reply_text(f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_text(f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')}</b>\n\n🗒Storyline <b>{imdb.get('plot')}</b> / 10", reply_markup=InlineKeyboardMarkup(btn))
         else:
             await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
         
