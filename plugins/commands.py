@@ -18,7 +18,10 @@ async def start(client, message):
         buttons = [
             [
                 InlineKeyboardButton('🎬 My Official Group', url='https://t.me/all_super_movies')
-            ]
+            ],
+            [
+                InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat='')
+            ]    
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
 
