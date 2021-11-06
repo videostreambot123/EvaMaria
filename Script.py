@@ -8,7 +8,7 @@ MY NAME IS <b>Scarlett Johansson</b>,\n\nI CAN PROVIDE MOVIES IN GROUPS AND PM\n
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """**Source code is unavailable**😁"""
+    SOURCE_TXT = """<b>Source code is unavailable</b>😁"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and I will respond whenever a keyword is found the message
@@ -37,7 +37,7 @@ MY NAME IS <b>Scarlett Johansson</b>,\n\nI CAN PROVIDE MOVIES IN GROUPS AND PM\n
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+    AUTOFILTER_TXT = """Help: <b>Add your channel to my DB</b>
 
 <b>NOTE:</b>
 1. Make me the admin of your channel if it's private.
