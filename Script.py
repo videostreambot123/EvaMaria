@@ -1,6 +1,9 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-MY NAME IS <b>Scarlett Johansson</b>,\n\nI CAN PROVIDE MOVIES IN GROUPS AND PM\nJUST ADD ME TO YOUR GROUP AS ADMIN😍\n\nTAP THE BELOW SEARCH BUTTON TO GET MOVIES IN INLINE MODE"""
+    START_TXT = """ℍ𝕖𝕝𝕝𝕠 {},
+𝓜𝓨 𝓝𝓐𝓜𝓔 𝓘𝓢 <b>𝐒𝐜𝐚𝐫𝐥𝐞𝐭𝐭 𝐉𝐨𝐡𝐚𝐧𝐬𝐬𝐨𝐧</b>,\n\n𝓘 𝓒𝓐𝓝 𝓟𝓡𝓞𝓥𝓘𝓓𝓔 𝓜𝓞𝓥𝓘𝓔𝓢 𝓘𝓝 𝓖𝓡𝓞𝓤𝓟𝓢 𝓐𝓝𝓓 𝓟𝓜
+𝓙𝓤𝓢𝓣 𝓐𝓓𝓓 𝓜𝓔 𝓣𝓞 𝓨𝓞𝓤𝓡 𝓖𝓡𝓞𝓤𝓟 𝓐𝓢 𝓐𝓓𝓜𝓘𝓝😍
+
+𝓣𝓐𝓟 𝓣𝓗𝓔 𝓑𝓔𝓛𝓞𝓦 𝓢𝓔𝓐𝓡𝓒𝓗 𝓑𝓤𝓣𝓣𝓞𝓝 𝓣𝓞 𝓖𝓔𝓣 𝓜𝓞𝓥𝓘𝓔𝓢 𝓘𝓝 𝓘𝓝𝓛𝓘𝓝𝓔 𝓜𝓞𝓓𝓔"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
