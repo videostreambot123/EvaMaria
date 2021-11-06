@@ -350,7 +350,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
+                await query.answer('OK, I have sent files to you',show_alert = True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
@@ -389,7 +389,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('🎬 Group', url='https://t.me/all_super_movies')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -419,7 +419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates'),
+            InlineKeyboardButton('🎬 Group', url='https://t.me/all_super_movies'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -589,16 +589,16 @@ async def auto_filter(client, message):
         imdb = await get_poster(search) if IMDB else None
         if imdb and imdb.get('poster'):
             try:
-                await message.reply_photo(photo=imdb.get('poster'), caption=f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
+                await message.reply_photo(photo=imdb.get('poster'), caption=f"🎞Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
             except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
                 pic = imdb.get('poster')
                 poster = pic.replace('.jpg', "._V1_UX360.jpg")
-                await message.reply_photo(photo=poster, caption=f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
+                await message.reply_photo(photo=poster, caption=f"🎞Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
             except Exception as e:
                 print(e)
-                await message.reply_text(f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
+                await message.reply_text(f"🎞Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
         elif imdb:
-            await message.reply_text(f"Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_text(f"🎞Title: <b>{imdb.get('title')}</b>\n🎭 Genres: <b>{imdb.get('genres')}</b>\n📆 Year: <b>{imdb.get('year')}</b>\n🌟 Rating: <b>{imdb.get('rating')} / 10</b>\n\n<b>🗒Storyline</b> <code>{imdb.get('plot')}</code>", reply_markup=InlineKeyboardMarkup(btn))
         else:
             await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
         
